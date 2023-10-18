@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação financeira na prática</title>
+    <link rel="stylesheet" href="tela_inicial/preloader.css">
+    <link rel="stylesheet" href="tela_inicial/bootstrap.min.css">
+    <link rel="stylesheet" href="tela_inicial/tela_inicial.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+    </div>
+    <div class="box">
+        <div class="row">
+            <div class="col-10">
+                <img src="tela_inicial/imgs/nome_area.png" class="img-titulo d-none d-xl-block area" alt="">
+            </div>
+            <div class="col-2">
+                <img src="tela_inicial/imgs/sesc_logo.png" class="d-none d-xl-block logo">
+            </div>
+        </div>
+        <div class="img-titulos">
+            <img src="tela_inicial/imgs/titulo_modulo.png" class="sub-titulo" alt="">
+        </div>
+        <div id="menu">
+            <div class="aneis init">
+                <a href="conteudo/02_educacao_financeira/conteudo/index.html" id="btn-1"></a>
+            </div>
+        </div>
+        <img src="tela_inicial/imgs/capa_ilustra.png" class="d-none d-xl-block capa" alt="">
+        <div class="botao-video ">
+            <p>Assista novamente ao vídeo<br> introdutório deste módulo:</p>
+            <div class="video-pq">
+                <img class="img-play" src="tela_inicial/imgs/Video-bt.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="backdrop">
+        <div class="modal-video">
+            <div class="wrapper">
+                <button id="fechar-video">X</button>
+                <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir:</p>
+                
+                <!-- Classe 'video-youtube' já ajustada ao layout. Manter ao colocar o link, retirando apenas o 'background-color' no css -->
+                <iframe class="video-youtube no-print" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="only-print sr-only">
+        <p>Neste módulo, vamos abordar os assuntos relacionados ao planejamento e à organização financeira. Aprenderemos
+            como podemos cuidar do nosso dinheiro e como se classificam as despesas e as receitas. Vamos apresentar
+            dicas de organização financeira e conheceremos os tipos de orçamento pessoal e familiar. Em seguida,
+            estudaremos os tributos e a diferença entre taxa e imposto, bem como alguns impostos federais, estaduais e
+            municipais que impactam nossa vida. Encerramos esse módulo aprendendo como calcular alguns impostos do nosso
+            dia a dia. Venha conosco aprender um pouco mais sobre como cuidar do nosso dinheiro utilizando conhecimentos
+            matemáticos. </p>
+    </div>
+    <script src="tela_inicial/jquery-3.6.0.min.js"></script>
+    <script src="tela_inicial/geral.js"></script>
+    <script src="tela_inicial/tela_inicial.js"></script>
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+    </script>
+</body>
+
+</html>

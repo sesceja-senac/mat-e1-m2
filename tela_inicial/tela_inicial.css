@@ -1,0 +1,353 @@
+body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+
+.area {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.capa {
+    width: 45%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#topo img {
+    width: 100%;
+}
+
+#menu {
+    display: block;
+    width: 400px;
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+    z-index: 22;
+}
+
+#menu>div {
+    width: 365px;
+    height: 100px;
+    background: transparent;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    margin-top: -15px;
+    border-radius: 60px;
+}
+
+.box img {
+    left: -1000px;
+}
+
+#menu>div a {
+    width: 365px;
+    height: 100px;
+    color: #fff !important;
+    margin-left: 0px;
+    display: block;
+    font-size: 22px;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+}
+
+#menu>div:hover {
+    cursor: pointer;
+}
+
+#menu>div:nth-child(1) {
+    background: url('../tela_inicial/imgs/bt_iniciar.png') no-repeat;
+    background-size: 100%;
+}
+
+#menu>div:nth-child(1):hover {
+    transform: scale(1.05);
+    background: url('../tela_inicial/imgs/bt_iniciar_hv.png') no-repeat;
+    background-size: 100%;
+}
+
+#menu>div.init {
+    margin-left: -2000px !important;
+}
+
+.box {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #05838a;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.capa {
+    width: 50%;
+}
+
+.img-titulos {
+    position: absolute;
+    top: 40%;
+    right: 8% !important;
+    width: 496px;
+    z-index: 20;
+}
+
+.img-titulo {
+    transition: all 0.5s ease-out;
+    width: 480px;
+    margin-bottom: 20px;
+}
+
+.img-titulo.init,
+.sub-titulo.init {
+    left: 8%;
+}
+
+.sub-titulo {
+    transition: all 0.5s ease-out;
+    width: 400px;
+}
+
+.img-titulo.init,
+.sub-titulo.init {
+    left: 8%;
+}
+
+
+.backdrop {
+    background-color: rgba(55, 55, 55, .8);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal-video {
+    background-image: url('../tela_inicial/imgs/Video-apresentacao-gd.png');
+    width: 1133px;
+    height: 708px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.wrapper{
+    width: 640px;
+    margin: 0 auto;
+}
+
+#fechar-video {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px #333;
+    transition-duration: .3s;
+}
+
+#fechar-video:hover {
+    background-color: #ff8b01;
+    color: white;
+    transition-duration: .3s;
+}
+
+.botao-video {
+    position: absolute;
+    bottom: 34%;
+    left: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+}
+
+.botao-video p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.video-pq {
+    height: 150px;
+    width: 150px;
+    background-image: url('../tela_inicial/imgs/Video-apresentacao-pq.png');
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    padding-left: 29px;
+    padding-top: 23px;
+}
+
+.img-play {
+    height: 85px;
+    width: 85px;
+}
+
+.video-pq:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.video-youtube{
+    width: 560px;
+    height: 315px;
+    margin: 30px auto;
+    display: block;
+    background-color: #ff8b01;
+}
+
+@media (min-width: 1440px) {
+    .img-titulos {
+        position: absolute;
+        top: 40%;
+        right: 10% !important;
+        z-index: 20;
+        transform: scale(1.4);
+    }
+
+    .capa {
+        margin-right: 40px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .img-atletas {
+        top: 50%;
+    }
+
+    .img-titulo.init,
+    .sub-titulo.init {
+        left: 2%;
+    }
+
+    .box {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    .img-titulos {
+        position: relative;
+        top: 15%;
+        right: unset !important;
+        left: unset !important;
+        width: 400px;
+        z-index: 20;
+        margin: 0 auto;
+    }
+
+    #menu {
+        display: block;
+        width: 365px;
+        position: relative;
+        bottom: unset;
+        right: unset;
+        z-index: 22;
+        top: 40%;
+        left: unset;
+        margin: 0 auto;
+    }
+
+    .modal-video{
+        width: 100%;
+        padding: 130px 150px 130px 120px;
+        background-image: url('imgs/Video-apresentacao-pq.png');
+        background-size: 90%;
+        background-position: center top;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    .video-youtube{
+        width: 440px;
+        height: 248px;
+    }
+
+    .botao-video {
+        bottom: 5%;
+        left: 50%;
+        width: 230px;
+        margin-left: -115px;
+    }
+}
+
+@media (max-width: 560px) {
+    .img-atletas {
+        display: none;
+    }
+
+    #menu, .img-titulos {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 90%;
+        left: initial;
+        right: initial;
+    }
+    #menu{
+        top: 35%;
+    }
+    .img-titulos{
+        top: 15%;
+    }
+    .img-titulo,
+    .sub-titulo {
+        width: 100%;
+    }
+    #menu>div, #menu>div a{
+        width: 100%;
+    }
+
+    .modal-video {
+        background-image: unset;
+        background-color: #05838a;
+        width: 100%;
+        height: 708px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 120px 30px;
+        color: white;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+    }
+    #fechar-video{
+        right: 10%;
+    }
+    .video-youtube{
+        width: 320px;
+        height: 180px;
+        margin-top: 50px;
+    }
+
+}
