@@ -2,7 +2,27 @@
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
+.titulo-conteudo{height: 0;}
+.estiloReferencias {
+  background-image: url(../../assets/imgs/referencias.jpg);
+  background-size: 100%;
+  padding-bottom: 100px;
 
+}
+.estiloReferencias .container{
+  padding-bottom: 50px;
+}
+.pagina{
+  padding-bottom: 100px !important;
+}
+.bt-print {
+  margin-top: -90px;
+  z-index: 10;
+}
+footer.container{
+  margin-top: -60px;
+  background-color: transparent;
+}
 body{
   background: url('../imgs/bg-left.png') no-repeat left center, url('../imgs/bg-right.png') no-repeat right center;
 }
