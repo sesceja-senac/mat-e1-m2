@@ -2,9 +2,6 @@
 .pagina *{
  all: unset;
 }
-.pagina table, .pagina tbody, .pagina thead, .pagina tr, .pagina th, .pagina td{
-  all: revert;
- }
 .pagina p, .pagina li, .pagina a{
   font-family: 'Libre Franklin Regular'
 }
@@ -129,7 +126,30 @@
   }
   .pagina figcaption	{
   display: block;	
+  text-align: center;
   }
+  .legenda{
+    display: block;	
+    text-align: center;
+  }
+  .flex-container {
+    display: flex;
+  }
+  
+  .image-box {
+    flex: 1; 
+    float: right;
+
+  }
+  
+  .text-box {
+    flex: 1; 
+  }
+
+  .gabarito{
+    padding-top: 80px;
+  }
+  .perguntas{padding-top: 4px;}
   .pagina figure	{
   display: block;
   margin-top: 1em;
@@ -353,72 +373,47 @@
   vertical-align: super;
   font-size: smaller;	
   }
-
-
-  table.sesc {
-    margin:0 1.5em 2em;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    border:6px solid;
-    margin-top:2em;
-    margin-bottom:2em;
-  }
-  table.sesc th{
-    background-color:#a4a4a4;
-    text-align:center;
-    padding:0.5em;
-    border:1px solid;
-  }
-  table.sesc td{
-    text-align:center;
-    padding:0.5em;
-    border:1px solid;
-    text-align:left;
-  }
-  /*
   .pagina table{
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: gray;	
+  display: table;
+  border-collapse: separate;
+  /*border-spacing: 2px;*/
+  border-color: gray;	
   }
   .pagina tbody{
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;	
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;	
   }
   .pagina td{
-    display: table-cell;
-    vertical-align: inherit;
+  display: table-cell;
+  vertical-align: inherit;
   }	
   
   .pagina tfoot{
-    display: table-footer-group;
-    vertical-align: middle;
-    border-color: inherit;	
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;	
   }
   th	{
     display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
-    text-align: center;	
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;	
   }
   .pagina thead{
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-  }
-  .pagina tr{
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
   }	
-  */
   
   .pagina title{
   display: none;	
   }
+  .pagina tr{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+  }	
     
   .pagina u{
   text-decoration: underline;
@@ -436,6 +431,22 @@
   font-style: italic;
   }
 
+  table.sesc {
+    margin: 1em auto 0.5em auto;
+    border: 2px solid #00767f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  table.sesc td{
+    border: 1px solid #00767f;}
+
+  table.sesc tr{
+  border: 1px solid #00767f;}
+
+  .imgZero{
+    width: 400px;
+    height: 400px;
+  }
+  #booklet h1{padding-top: unset;}
 
 /* Estilos de acordo com o template + ou - */
 .img-fluid{
@@ -750,6 +761,16 @@ p{
 
 }
 */
+#carousel3  {page-break-before: always;
+}
+#carousel3 .carousel-inner .carousel-item {
+  float: left !important;
+  width: 40% !important;
+  font-size: 12px !important;
+  line-height: 14px!important;
+
+
+}
 .visually-hidden.print{
  position: relative!important;
  width: auto!important;
@@ -876,11 +897,4 @@ iframe, iframe.youtube-pl{
 }
 
 
-.div-imagem{
-  border: #898989 solid 10px;
-  padding: 30px;
-  margin: 20px auto;
-}
-.text-right{
-  text-align: right;
-}
+

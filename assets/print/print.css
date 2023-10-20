@@ -1,7 +1,16 @@
 @import url(../font/LibreFranklin/LibreFranklin.css);
 
 #marcadaguaLogo { display: none !important; }
+#carousel3  {page-break-before: always;
+}
+#carousel3 .carousel-inner .carousel-item {
+  float: left !important;
+  width: 40% !important;
+  font-size: 12px !important;
+  line-height: 14px!important;
 
+
+}
 .grupo-imprimir {
   display: block;
   text-align: right;
@@ -92,10 +101,27 @@ font-weight: 700;
 .only-print, .apenas-print, .apenas-imprimir {
   display: none;
 }
+table.sesc {
+  margin: 1em auto 0.5em auto;
+  border: 2px solid #00767f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+table.sesc tr{
+  border: 1px solid #00767f;}
 
+.imgZero{
+  width: 400px;
+  height: 400px;
+}
+#booklet h1{padding-top: unset;}
+.legenda{
+  display: block;	
+  text-align: center;
+}
+
+.perguntas{padding-top: 4px;}
 @media print {
 
-  
 
 
     @page {
@@ -135,7 +161,10 @@ font-weight: 700;
       a[data-toggle='collapse']:after {
         content: "";
       }
-    
+      .pagina figcaption	{
+        display: block;	
+        text-align: center;
+        }
 
 
       #marcadaguaLogo {
@@ -143,7 +172,7 @@ font-weight: 700;
         position: fixed;
         top: 1cm;
         left: 0px;
-        width: auto;
+        width: 100%;
         height:auto;
         opacity: 0.07;
         z-index: 1;
