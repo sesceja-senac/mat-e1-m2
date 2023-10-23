@@ -5,7 +5,8 @@
 .titulo-conteudo{height: 0;}
 .estiloReferencias {
   background-image: url(../../assets/imgs/referencias.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-attachment: fixed;
   padding-bottom: 100px;
 
 }
@@ -202,6 +203,7 @@ footer{
 .pagination{
   display: flex;
   margin: auto;
+  padding-bottom: 0 !important;
 }
 footer ul.pagination li.active a{
   background-color: #00838d;
