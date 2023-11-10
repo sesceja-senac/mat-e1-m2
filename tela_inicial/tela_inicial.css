@@ -30,7 +30,7 @@ a {
 
 #menu {
     display: block;
-    width: 400px;
+    width: 180px;
     position: absolute;
     bottom: 20%;
     right: 15%;
@@ -38,14 +38,14 @@ a {
 }
 
 #menu>div {
-    width: 365px;
-    height: 100px;
+    width: 179px;
+    height: 67px;
     background: transparent;
     font-size: 18px;
     text-decoration: none;
     transition: all 0.5s ease-out;
     margin-top: -15px;
-    border-radius: 60px;
+    /* border-radius: 60px; */
 }
 
 .box img {
@@ -68,14 +68,14 @@ a {
 }
 
 #menu>div:nth-child(1) {
-    background: url('../tela_inicial/imgs/bt_iniciar.png') no-repeat;
+    background: url('../conteudo/02_educacao_financeira/assets/imgs/tela_inicial/btn_hover_scale.png') no-repeat;
     background-size: 100%;
 }
 
 #menu>div:nth-child(1):hover {
-    transform: scale(1.05);
-    background: url('../tela_inicial/imgs/bt_iniciar_hv.png') no-repeat;
-    background-size: 100%;
+    transform: scale(1.2);
+    /* background: url('../tela_inicial/imgs/bt_iniciar_hv.png') no-repeat; */
+    /* background-size: 100%; */
 }
 
 #menu>div.init {
@@ -86,21 +86,29 @@ a {
     display: block;
     height: 100vh;
     width: 100%;
-    background-color: #05838a;
+    background-image: url('../conteudo/02_educacao_financeira/assets/imgs/tela_inicial/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    position: relative;
 }
 
 .capa {
-    width: 50%;
+    width: 20%;
+    position: absolute;
+    right: 8%;
+    left: unset !important;
+    top: 180px;
 }
 
 .img-titulos {
     position: absolute;
     top: 40%;
-    right: 8% !important;
+    right: 0 !important;
+    left: 0 !important;
+    margin: 0 auto;
     width: 496px;
+    transform: scale(1.4);
     z-index: 20;
 }
 
@@ -222,16 +230,16 @@ a {
 }
 
 @media (min-width: 1440px) {
-    .img-titulos {
+    /* .img-titulos {
         position: absolute;
         top: 40%;
         right: 10% !important;
         z-index: 20;
         transform: scale(1.4);
-    }
+    } */
 
     .capa {
-        margin-right: 40px;
+        /* margin-right: 40px; */
     }
 
 }
