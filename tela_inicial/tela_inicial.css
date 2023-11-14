@@ -212,7 +212,8 @@ a {
 
 .botao-video {
     position: absolute;
-    bottom: 34%;
+    top: 10px;
+
     left: 35px;
     display: flex;
     flex-direction: column;
@@ -351,6 +352,8 @@ a {
     .botao-video {
         left: 0;
         right: 0;
+        top: unset;
+        bottom: 34%;
         margin: 0 auto;
         width: 248px;
     }
@@ -418,6 +421,7 @@ a {
         line-height: 26px;
     }
     .botao-video {
+        top: unset;
         position: absolute;
         bottom: 32%;
     }
