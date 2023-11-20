@@ -278,17 +278,22 @@ footer ul.pagination a:visited{
   font-weight: bold;
   color:#00828b;
 }
+
 .esquemaDaBru .enunciado{
   font-weight: unset;
   color: unset;
 }
 .esquemaDaBru .alt-c, .esquemaDaBru .alt-e{
-  color: #fff;
+  
   font-weight: initial;
+/* 
   background-color: #00828b;
+  color: #fff;
   border: none;
+*/
   padding: 0 15px;
 }
+
 .esquemaDaBru .alt-c span, .esquemaDaBru .alt-e span{
   background: #ff9700;
   margin-left: -15px;
@@ -297,6 +302,7 @@ footer ul.pagination a:visited{
   margin-right: 10px;
   display: inherit;
   padding: 5px 0;
+  color: #fff;
 }
 .esquemaDaBru .selected.certo{
   background-color: #ff9700;
@@ -312,6 +318,19 @@ footer ul.pagination a:visited{
 .esquemaDaBru .selected.errado{
   background-image: url('../imgs/errado.png');
   background-size: 15px;
+}
+
+.alt-c.selected {
+  transform: none;
+  color: white;
+  background-color: rgba(var(--bs-success-rgb)) !important;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+}
+.alt-e.selected {
+  transform: none;
+  color: white;
+  background-color: rgba(var(--bs-danger-rgb)) !important;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
 }
 
 .bt-painel{
@@ -370,6 +389,14 @@ footer ul.pagination a:visited{
   .tt-despesas{
     width: 82%;
   }
+
+  .caixa.icone{
+    padding-left: 90px;
+  }
+  .icone.praticar::before {
+    left: -35px;
+  }
+
 }
 
 @media (max-width:600px){

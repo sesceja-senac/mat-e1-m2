@@ -881,4 +881,7 @@ iframe, iframe.youtube-pl{
 }
 
 
-
+.div-imagem{
+  padding: 10px;
+  border: #333 solid 1px;
+}
