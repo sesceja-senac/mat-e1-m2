@@ -169,7 +169,7 @@ a {
     left: 0;
     z-index: 100;
 }
-
+/*
 .modal-video {
     background-image: url('../tela_inicial/imgs/Video-apresentacao-gd.png');
     width: 1133px;
@@ -184,6 +184,24 @@ a {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+*/
+.modal-video {
+    background: url('../tela_inicial/imgs/video_bg.png');
+    width: 922px;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -461px;
+    margin-top: -350px;
+}
+
+
 .wrapper{
     width: 640px;
     margin: 0 auto;
