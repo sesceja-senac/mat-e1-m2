@@ -436,6 +436,7 @@ footer ul.pagination a:visited{
 
   .div-imagem{
     padding: 20px;
+    height: auto;
   }
 
   .tt-despesas{
