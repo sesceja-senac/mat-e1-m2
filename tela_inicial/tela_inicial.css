@@ -456,24 +456,37 @@ a {
 }
 
 @media (max-width: 480px) {
-    .sub-titulo {
-        font-size: 20px;
-        width: 177px;
-        line-height: 26px;
-    }
-    .botao-video {
-        top: unset;
-        position: absolute;
-        bottom: 32%;
-    }
     .logo {
         width: 70px
     }
+
     .nome-area{
-        top: 10%;
+        top: 12%;
+        line-height: 34px;
     }
+
     .img-titulos {
-        top: 26%;
+        top: 32%;
+        width: 100%;
+    }
+    .sub-titulo {
+        font-size: 20px;
+        width: 177px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #menu {
+        bottom: 37%;
+    }
+
+    .botao-video {
+        top: unset;
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        margin: 0;
     }
     .botao-video p {
         font-size: 16px;
