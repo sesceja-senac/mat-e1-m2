@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+.conteudo {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+    left: calc(50% - 1920px / 2);
+    top: calc(50% - 1080px / 2);
+    margin: auto;
+}
+
+.animacao {
+    animation: go-back 1s infinite alternate;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+/**************************************************************************/
+/***************************** tela introdução ***************************/
+/************************************************************************/
+
+
+
+.text-intro-fiscal {
+    font-size: 30px;
+    font-family: 'Calibri';
+    color: #333 !important;
+}
+
+.footer-mesa {
+    text-align: center;
+}
+
+.btn.btn-comecar {
+    display: inline-block;
+    border: 4px solid black;
+    background-color: #F8A618;
+    font-size: 36px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 9px;
+    margin: 4%;
+    padding-inline: 10%;
+    text-transform: uppercase;
+}
+
+.btn.btn-comecar:hover {
+    background-color: #C5D742;
+    transform: scale(1.1);
+}
+
+
+/**************************************************************************/
+/*************************** tela conteudo inicial ***********************/
+/************************************************************************/
+
+.conteudo-controle {
+    bottom: 155px;
+    right: 143px;
+    width: 35%;
+}
+
+.organiza {
+    display: inline-block;
+    border: 4px solid black;
+    background-color: #C5D93A;
+    font-size: 36px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    padding: 4%;
+    border-radius: 9px;
+    margin: 4%;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.organiza:hover {
+    background-color: #F8A618;
+    transform: scale(1.1);
+}
+
+.conteudo-controle-organizado {
+    top: 760px;
+    left: 619px;
+}
+
+.notinhas {
+    display: inline-block;
+    border: 4px solid black;
+    background-color: #F8A618;
+    font-size: 36px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 9px;
+    margin: 4%;
+    text-transform: uppercase;
+}
+
+.notinhas:hover {
+    background-color: #C5D742;
+}
+
+/**************************************************************************/
+/******************************** tela final *****************************/
+/************************************************************************/
+
+.final-controle-gastos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final-controle.position-absolute {
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #333;
+}
+
+
+.header-final-controle {
+    background-color: #5C7309;
+    border-radius: 10px;
+    font-size: 36px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 15px #333;
+    color: white;
+}
+
+.text-final-fiscal {
+    font-size: 30px;
+    font-family: 'Calibri';
+    color: #333 !important;
+}
+
+/**************************************************************************/
+/****************************** tela planilha ****************************/
+/************************************************************************/
+.intro-controle-gastos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-controle.position-absolute {
+    background-color: white;
+    width: 50%;
+    border-radius: 9px;
+    box-shadow: 10px 10px 10px #333;
+}
+
+.header-intro-controle {
+    background-color: #F2D39A;
+    border-radius: 9px;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 15px #333;
+}
+
+.p-2.h2-planilha {
+	font-size: 54px;
+}
+
+.fonte-input {
+    font-size: 152%;
+}
+
+.btn.btn-planilha {
+    display: inline-block;
+    border: 4px solid black;
+    background-color: #F2D39A;
+    font-size: 36px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 4%;
+    text-transform: uppercase;
+}
+
+th {
+    font-size: 35px;
+}
+
+.btn-planilha:hover {
+    transform: scale(1.1);
+}
+
+.head-coluna-gastos {
+    background-color: #F8A618;
+    border: 4px solid black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.bordinha {
+    border: 4px solid black;
+}
+
+.thead-planilha {
+    background-color: #F2D39A;
+    text-transform: uppercase;
+}
+
+.td-planilha {
+    background-color: #ffecc6 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mao {
+    top: 0px;
+    left: 1438px;
+}
+
+.t-nota {
+    top: 205px;
+    font-size: 34px;
+    left: 66px;
+    transform: rotate(3deg);
+    font-family: 'Century';
+    font-weight: bold;
+}
+
+.btn-fechar {
+    display: inline-block;
+    border: 4px solid black;
+    background-color: #F8A618;
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    border-radius: 9px;
+    margin: 1%;
+    padding-inline: 3%;
+    text-transform: uppercase;
+}
+
+#xis {
+    top: 67px;
+    left: 395px;
+}
+
+#fechar {
+    top: 940px;
+    left: 0px;
+    width: 90%;
+    height: 9%;
+    font-size: 30px;
+    margin: 4%;
+}
+
+.btn-fechar:hover {
+    transform: scale(1.2);
+    background-color: #c4572d;
+}
+
+.btn-validacao {
+    display: inline-block;
+    border: 4px solid black;
+    background-color: #C5D93A;
+    font-size: 35px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    border-radius: 9px;
+    margin: 1%;
+    padding-inline: 3%;
+    text-transform: uppercase;
+    color: black;
+}
+
+#validacao {
+    top: 760px;
+    width: 90%;
+    height: 20%;
+    margin: 4%;
+}
+
+.btn-validacao:hover {
+    transform: scale(1.2);
+    background-color: #5C7309;
+    color: white;
+}
+
+.circulo {
+    width: 112px;
+    height: 110px;
+    top: 40px;
+    left: 158px;
+    background-image: url('../img/circulo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ordem-numerica {
+    font-size: 30px;
+    top: -123px;
+    left: 105px;
+    font-family: 'Comic Neue', cursive;
+}
+
+/**************************************************************************/
+/******************************* estilo modal ****************************/
+/************************************************************************/
+
+.header-modal-positivo {
+    background-color: #5C7309;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header-modal-negativo {
+    background-color: #731009;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/**************************************************************************/
+/***************************** vire o celular ****************************/
+/************************************************************************/
+
+.p-paisagem {
+    color: white;
+    text-align: center;
+}
+
+.img-paisagem {
+    max-width: 70% !important;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (orientation: portrait) {
+    .modo-smart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #5C7309;
+        z-index: 9999999999999999999;
+    }
+}

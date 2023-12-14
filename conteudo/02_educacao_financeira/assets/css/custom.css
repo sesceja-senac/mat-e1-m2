@@ -491,3 +491,11 @@ footer ul.pagination a:visited{
 background-position: right;
 }
 
+.btn-oda {
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+}
+.btn-oda:hover {
+  opacity: .7;
+}
